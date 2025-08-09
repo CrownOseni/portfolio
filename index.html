@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <style>
+    /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    /* Hamburger button hidden by default */
+    #menu-toggle {
+      font-size: 2rem;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      display: none;
+    }
+    /* Hide nav links on small screens */
+    #nav-links.hidden {
+      display: none;
+    }
+    /* Responsive for small screens */
+    @media (max-width: 600px) {
+      #menu-toggle {
+        display: block;
+      }
+      nav ul {
+        flex-direction: column;
+        background-color: #4a90e2;
+        width: 100%;
+      }
+      nav ul li {
+        margin: 10px 0;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+      <ul id="nav-links" class="hidden">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Welcome to my portfolio!</p>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Here are some of my projects.</p>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Get in touch!</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
