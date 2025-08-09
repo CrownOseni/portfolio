@@ -42,6 +42,38 @@ nav a:hover {
   color: #ffd700;
 }
 
+/* Hide nav links by default on small screens */
+#nav-links.hidden {
+  display: none;
+}
+
+/* Style the hamburger button */
+#menu-toggle {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  display: none; /* hide on large screens */
+}
+
+/* Show the hamburger button and hide nav links on small screens */
+@media (max-width: 600px) {
+  #menu-toggle {
+    display: block;
+  }
+  #nav-links {
+    display: block;
+    background-color: #4a90e2;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  #nav-links li {
+    margin: 10px 0;
+  }
+}
+
+
 /* Section styles */
 section {
   max-width: 900px;
