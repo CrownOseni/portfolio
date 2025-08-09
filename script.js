@@ -1,6 +1,8 @@
-const menuToggle = document.getElementById('menu-toggle');
-const navLinks = document.getElementById('nav-links');
+document.addEventListener('DOMContentLoaded', function () {
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
 
-menuToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('hidden');
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('hidden');
+  });
 });
